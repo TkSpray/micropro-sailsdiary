@@ -1,0 +1,15 @@
+<!-- pages/create/create.wxml -->
+<view class="create-container" hover-class="none" hover-stop-propagation="false">
+  <van-cell-group title="日志信息">
+    <van-field value="{{ title }}" placeholder="请输入标题" label="标题" bind:blur="onBlur" data-name="title" />
+    <van-field value="{{ tag }}" placeholder="请输入标签(四个字以内)" maxlength="4" label="标签" bind:blur="onBlur" data-name="tag" />
+    <van-field value="{{ article }}" placeholder="请输入正文" label="正文" type="textarea" autosize selectable="true" bind:blur="onBlur" data-name="article" />
+  </van-cell-group>
+  <view style="margin-top:10px">
+    <van-uploader file-list="{{ fileList }}" max-count="1" bind:after-read="afterRead" upload-text="上传封面图" deletable="{{false}}" />
+  </view>
+  <view class="create-confirm-btn">
+    <van-button plain block type="primary" bindtap="confirm">确认</van-button>
+  </view>
+  <van-toast id="van-toast" />
+</view>

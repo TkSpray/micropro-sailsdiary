@@ -1,23 +1,27 @@
 /**app.wxss**/
+page {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
+    Segoe UI, Arial, Roboto, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft Yahei", sans-serif;
+}
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-} 
+}
 
 button {
   background: initial;
 }
 
-button:focus{
+button:focus {
   outline: 0;
 }
 
-button::after{
+button::after {
   border: none;
 }
-
 
 page {
   background: #f6f6f6;
@@ -26,7 +30,9 @@ page {
   justify-content: flex-start;
 }
 
-.userinfo, .uploader, .tunnel {
+.userinfo,
+.uploader,
+.tunnel {
   margin-top: 40rpx;
   height: 140rpx;
   width: 100%;
@@ -64,7 +70,8 @@ page {
   border: none;
 }
 
-.uploader, .tunnel {
+.uploader,
+.tunnel {
   height: auto;
   padding: 0 0 0 40rpx;
   flex-direction: column;
@@ -72,7 +79,8 @@ page {
   box-sizing: border-box;
 }
 
-.uploader-text, .tunnel-text {
+.uploader-text,
+.tunnel-text {
   width: 100%;
   line-height: 52px;
   font-size: 34rpx;

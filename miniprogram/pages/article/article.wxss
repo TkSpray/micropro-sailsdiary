@@ -1,0 +1,36 @@
+/* pages/article/article.wxss */
+page {
+  background: #ffffff;
+  font-family: STSongti-SC-Black;
+}
+
+.article-img-wrapper {
+  text-align: center;
+}
+.article-img-wrapper image {
+  height: 200px;
+  width: 100%;
+}
+.article-wrapper {
+  padding: 30px;
+}
+.article-header-title {
+  color: rgba(0, 0, 0, 0.85);
+  display: block;
+  letter-spacing: normal;
+  font-size: 21px;
+}
+.article-header-date {
+  color: rgba(0, 0, 0, 0.65);
+  display: block;
+  text-align: right;
+  margin: 15px auto;
+  font-size: 18px;
+}
+.article-tag {
+  text-align: right;
+  margin: 10px auto;
+}
+.article-content-text {
+  color: rgba(0, 0, 0, 0.5);
+}

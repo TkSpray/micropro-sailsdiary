@@ -1,0 +1,17 @@
+<!-- pages/article/article.wxml -->
+<view class="article-container">
+  <view class="article-img-wrapper">
+    <image src="{{article.coverURL}}" mode="aspectFill"></image>
+  </view>
+  <view class="article-wrapper">
+    <view class="article-header">
+      <text class="article-header-title">{{article.title}}</text>
+      <view class="article-tag" hover-class="none" hover-stop-propagation="false">
+        <van-tag plain size="large">{{article.tag}}</van-tag>
+      </view>
+    </view>
+    <view class="article-content">
+      <text class="article-content-text" space="ture" decode="true">{{article.text}}</text>
+    </view>
+  </view>
+</view>

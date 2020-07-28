@@ -1,0 +1,103 @@
+/* pages/home/home.wxss */
+page {
+  background: #ffffff;
+  font-family: STSongti-SC-Regular;
+}
+.home-wrapper {
+  height: 100vh;
+}
+
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto;
+  margin-bottom: 0;
+}
+
+.userAvatar {
+  width: 32px;
+  height: 32px;
+}
+.userAvatar image {
+  width: 100%;
+}
+.home-header {
+  color: #686464;
+  border-bottom: 1px solid #979797;
+  padding: 10px 5px;
+  display: flex;
+  margin: 0 auto 10px auto;
+}
+
+.home-header-time {
+  font-size: 46px;
+  line-height: 46px;
+}
+
+.home-header-right {
+  margin-left: 10px;
+}
+.home-header-day,
+.home-header-date {
+  display: block;
+  line-height: 23px;
+}
+.home-slogan {
+  color: #686464;
+  margin: 20px auto;
+  padding: 0 5px;
+}
+.home-slogan-text {
+}
+.home-slogan-auther {
+  text-align: right;
+}
+.home-img {
+  box-shadow: 1px 2px 3px gray;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin-bottom: 50px;
+}
+.home-img image {
+  height: 420px;
+}
+.cards-container {
+  width: 86vw;
+}
+
+.card-wrapper {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.card-cover {
+  margin: 0 auto;
+  text-align: center;
+}
+.card-cover image {
+  width: 100%;
+}
+.card-info {
+  overflow: hidden;
+}
+.card-header {
+  display: block;
+  margin: 0 20px;
+  font-size: 21px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-top: 5px;
+}
+.card-text {
+  display: block;
+  margin: 10px 20px 15px 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}

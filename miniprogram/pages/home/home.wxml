@@ -1,0 +1,50 @@
+<!-- pages/home/home.wxml -->
+<view class="container" style="background: #ffffff;">
+  <view class="home-wrapper">
+    <view class="home-nav">
+      <navigator url="../create/create">
+        <van-icon name="add-o" color="rgba(60,60,67,0.6)" size="30px " />
+      </navigator>
+      <van-image round width="30px" height="30px" fit="cover" src="{{avatarUrl}}" />
+    </view>
+    <view class="home-header">
+      <view class="home-header-left">
+        <text class="home-header-time">{{time}}</text>
+      </view>
+      <view class="home-header-right">
+        <text class="home-header-day">{{day}}</text>
+        <text class="home-header-date">{{date}}</text>
+      </view>
+    </view>
+    <view class="home-slogan">
+      <view class="home-slogan-text">
+        <text class="">{{text}}</text>
+      </view>
+      <view class="home-slogan-auther">
+        <text class="">{{auther}}</text>
+      </view>
+    </view>
+    <view class="home-img">
+      <image src="../../images/LOGO.png" mode="aspectFit" lazy-load="false"></image>
+    </view>
+    <view class="home-footer">
+      <van-divider />
+    </view>
+  </view>
+  <view class="cards-container">
+    <view class="card-wrapper" wx:for-items="{{userData.data[0].articles}}" wx:for-item="item" wx:key="item" bindtap="getDetails" data-item="{{item}}">
+      <view class="card-cover">
+        <image src="{{item.coverURL}}" mode="widthFix" />
+      </view>
+      <view class="card-info">
+        <text class="card-header" space="true" decode="true">{{item.title}}</text>
+        <text class="card-text" space="true" decode="true">{{formatText.format(item.text)}}</text>
+        <view class="card-footer">
+          <van-tag plain size="large">{{item.tag}}</van-tag>
+          <van-icon name="more-o" size="26px" color="rgba(0, 0, 0, 0.5)" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<wxs module="formatText" src="./formatText.wxs"></wxs>

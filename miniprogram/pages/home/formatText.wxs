@@ -1,0 +1,9 @@
+var formatText = {
+  format: function (val) {
+    return val.length > 10 ? val.slice(0, 10) + "......" : val;
+  }
+};
+
+module.exports = {
+  format: formatText.format
+};
